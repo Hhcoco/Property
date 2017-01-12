@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HandleKeyOk">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/personadmin_srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+            android:id="@+id/swipeToLoad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/swipe_target"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+            <com.xunhe.ilpw.view.LoadMoreFooterView
+                android:id="@+id/swipe_load_more_footer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center" />
+        </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/handlekeyapply_loading"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDuration="500"
+            android:indeterminateDrawable="@drawable/loading_circle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/icon_home_opendoor_pressed" android:state_pressed="true" ></item>
+    <item android:drawable="@drawable/icon_home_opendoor_unpressed"></item>
+
+</selector>

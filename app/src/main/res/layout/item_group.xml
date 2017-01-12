@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/item_group_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/sanjiao_hide"/>
+    <TextView
+        android:id="@+id/item_group_tv_time"
+        android:layout_marginLeft="6dp"
+        android:textSize="18sp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

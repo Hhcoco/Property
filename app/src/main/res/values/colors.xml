@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#009FF8</color>
+    <color name="color_757690">#757690</color>
+    <color name="color_8a8a8a">#8a8a8a</color>
+    <color name="color_11cd6e">#11cd6e</color>
+    <color name="color_a9b7b7">#a9b7b7</color>
+    <color name="color_F2F2EF">#F2F2EF</color>
+    <color name="color_009FF8">#009FF8</color>
+    <color name="color_2B2B2B">#2B2B2B</color>
+    <color name="color_8B8B8B">#8B8B8B</color>
+    <color name="color_FF8764">#FF8764</color>
+    <color name="color_9A9A9A">#9A9A9A</color>
+    <color name="color_151515">#151515</color>
+    <color name="color_dbdbdb">#dbdbdb</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_E9E9EA">#E9E9EA</color>
+    <color name="color_FF764F">#FF764F</color>
+    <color name="white">#ffffff</color>
+    <color name="color_393939">#393939</color>
+    <color name="color_FF0000">#FF0000</color>
+
+    <color name="google_blue">#4285F4</color>
+    <color name="google_red">#EA4335</color>
+    <color name="google_green">#34A853</color>
+    <color name="google_yellow">#FBBC05</color>
+
+    <!-- Commons -->
+    <color name="background_app">#dedede</color>
+
+    <color name="background_list_back">#e3e3e3</color>
+    <color name="background_list_front">#ffffff</color>
+    <color name="text_title">#444444</color>
+    <color name="text_description">#7e7e7e</color>
+
+    <color name="line">#ffbcbcbc</color>
+
+    <color name="background_new_tag">#ff0000</color>
+    <color name="text_new_tag">#ffffff</color>
+
+</resources>

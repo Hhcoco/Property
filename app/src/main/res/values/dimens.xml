@@ -1,0 +1,34 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="load_more_footer_height_classic">60dp</dimen>
+    <!-- google -->
+    <dimen name="refresh_header_height_google">100dp</dimen>
+    <dimen name="refresh_trigger_offset_google">100dp</dimen>
+    <dimen name="refresh_final_offset_google">150dp</dimen>
+    <dimen name="refresh_drawable_size_google">40dp</dimen>
+
+    <dimen name="load_more_footer_height_google">72dp</dimen>
+    <dimen name="load_more_trigger_offset_google">88dp</dimen>
+    <dimen name="load_more_final_offset_google">120dp</dimen>
+    <dimen name="load_more_drawable_size_google">36dp</dimen>
+
+    <!-- Default -->
+    <dimen name="radius_default">3dp</dimen>
+    <dimen name="padding_default">8dp</dimen>
+    <dimen name="margin_default">5dp</dimen>
+    <dimen name="line_default">1dp</dimen>
+
+    <!-- Products -->
+    <dimen name="height_list">90dp</dimen>
+    <dimen name="size_list_image">64dp</dimen>
+    <dimen name="font_size_title">17sp</dimen>
+    <dimen name="font_size_description">15sp</dimen>
+
+    <dimen name="margin_setting">20dp</dimen>
+
+    <dimen name="font_size_new_tag">11sp</dimen>
+    <dimen name="padding_new_tag">3dp</dimen>
+
+</resources>

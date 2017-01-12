@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data></data>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_dbdbdb"
+    tools:context="com.xunhe.ilpw.activity.CardReadDeviceActivity">
+
+    <RelativeLayout
+        android:background="@color/color_009FF8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:id="@+id/cardread_ll_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingRight="30dp">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/icon_left_white"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连接设备"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cardread_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+</layout>

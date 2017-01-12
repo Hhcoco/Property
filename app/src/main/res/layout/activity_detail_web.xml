@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout><data></data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xunhe.ilpw.activity.DetailWebActivity">
+    <RelativeLayout
+        android:background="@color/color_009FF8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:id="@+id/detailweb_ll_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingRight="30dp">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/icon_left_white"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户协议"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/detailweb_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+</LinearLayout>
+</layout>

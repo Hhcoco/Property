@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data></data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dbdbdb"
+    android:orientation="vertical"
+    tools:context="com.xunhe.ilpw.activity.NoticeDetailActivity">
+
+    <RelativeLayout
+        android:background="@color/color_009FF8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:id="@+id/noticedetail_ll_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingRight="30dp">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/icon_left_white"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公告详情"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:layout_marginBottom="2px"
+            android:paddingTop="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/noticedetail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16sp"
+                android:text="Title"/>
+            <TextView
+                android:id="@+id/noticedetail_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Body"/>
+            <TextView
+                android:id="@+id/noticedetail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:text="2016-7-22"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/noticedetail_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateDuration="500"
+                android:indeterminateDrawable="@drawable/loading_circle"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
+</layout>

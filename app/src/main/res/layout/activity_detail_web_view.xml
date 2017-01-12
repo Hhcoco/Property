@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout><data></data>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xunhe.ilpw.activity.DetailWebViewActivity">
+    <RelativeLayout
+        android:background="@color/color_009FF8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:id="@+id/detailwebview_ll_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingRight="30dp">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/icon_left_white"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详情"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/detailwebview_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="标题"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/color_393939"/>
+    <TextView
+        android:id="@+id/detailwebview_tv_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="说明"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/color_757690"></View>
+    <TextView
+        android:id="@+id/detailwebview_tv_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+</LinearLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data></data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_dbdbdb"
+    tools:context="com.xunhe.ilpw.activity.NoticeActivity">
+    <RelativeLayout
+        android:background="@color/color_009FF8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:id="@+id/applyrecord_ll_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingRight="30dp">
+            <ImageView
+                android:id="@+id/notice_img_left"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/icon_left_white"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/notice_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公告"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/notice_srl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <com.xunhe.ilpw.view.ZeusNoticeRecyclerView
+            android:id="@+id/notice_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.xunhe.ilpw.view.ZeusNoticeRecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <RelativeLayout
+            android:id="@+id/notice_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateDuration="500"
+                android:indeterminateDrawable="@drawable/loading_circle"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xunhe.ilpw">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"></uses-permission>
+
+    <!-- permission for MD -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- Android M -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- permission for MD end -->
+    <application
+        android:name=".application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="MIAODOU_APP_KEY"
+            android:value="603168a5e35241a99a393b5d09e206e2" />
+        <!-- MiaoDou BLE Service Begin -->
+        <service android:name="com.hzblzx.miaodou.sdk.core.bluetooth.NRFUartService" />
+        <service android:name="com.hzblzx.miaodou.sdk.core.bluetooth.CSRUartService" />
+
+        <activity
+            android:name=".activity.LauncherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.BaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WelcomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.GetKeyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.GetUserInfoService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.ApplykeyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelectCommunityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ApplyRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HandleKeyApplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CardReadDeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HandleKeyDelayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PreRegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.NoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NoticeDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.KeyDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PersonDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.KeyShareActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".activity.HandleKeyApplyDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.UpdateService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.DetailWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChangePwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PersonAdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddPersonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TestActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <service
+            android:name="com.invs.Blt4"
+            android:enabled="true" />
+
+        <activity android:name=".activity.SuggestionActivity" />
+        <activity android:name=".activity.RecordDetailActivity" />
+        <activity android:name=".activity.DetailWebActivity"></activity>
+    </application>
+
+</manifest>

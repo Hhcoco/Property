@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dbdbdb"
+    android:orientation="vertical"
+    tools:context="com.xunhe.ilpw.activity.PersonAdminActivity">
+    <RelativeLayout
+        android:background="@color/color_009FF8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:id="@+id/personadmin_ll_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingRight="30dp">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/icon_left_white"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/personadmin_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"/>
+        <LinearLayout
+            android:id="@+id/personadmin_ll_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_add"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/personadmin_srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+            android:id="@+id/swipeToLoad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <com.xunhe.ilpw.view.ZeusRecyclerView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.xunhe.ilpw.view.ZeusRecyclerView>
+            <com.xunhe.ilpw.view.LoadMoreFooterView
+                android:id="@+id/swipe_load_more_footer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center" />
+        </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
+</layout>

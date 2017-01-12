@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/color_009FF8"
+    android:alpha="0.5"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:id="@+id/original_tv_takephoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拍　　照"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:paddingTop="12dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/original_tv_from_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="从相册选取"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="12dp"
+        android:gravity="center_horizontal"/>
+    </LinearLayout>
+</RelativeLayout>
