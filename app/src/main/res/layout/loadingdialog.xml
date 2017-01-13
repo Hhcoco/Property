@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:paddingLeft="12dp"
-    android:paddingRight="12dp"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
     <ProgressBar
         android:id="@+id/loadingdialog_progressbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:indeterminateDuration="500"
         android:layout_centerInParent="true"
+        style="@style/Base.Widget.AppCompat.ProgressBar"
         android:paddingTop="50dp"
         android:paddingBottom="50dp"
         android:indeterminateDrawable="@drawable/loading_circle"

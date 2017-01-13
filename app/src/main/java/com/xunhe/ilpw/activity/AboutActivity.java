@@ -26,7 +26,7 @@ public class AboutActivity extends BaseActivity implements View.OnClickListener{
     @Override
     protected void toDo() {
         activityAbortBinding.aboutLlLeft.setOnClickListener(this);
-        activityAbortBinding.aboutTvProtocol.setOnClickListener(this);
+        //activityAbortBinding.aboutTvProtocol.setOnClickListener(this);
         PackageManager packageManager = getPackageManager();
         try {
             PackageInfo packageInfo = packageManager.getPackageInfo(this.getPackageName() , 0);
@@ -43,9 +43,9 @@ public class AboutActivity extends BaseActivity implements View.OnClickListener{
             case R.id.about_ll_left:
                 finish();
                 break;
-            case R.id.about_tv_protocol:
+            /*case R.id.about_tv_protocol:
                 startActivity(new Intent(AboutActivity.this , DetailWebActivity.class));
-                break;
+                break;*/
         }
     }
 }

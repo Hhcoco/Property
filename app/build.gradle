@@ -63,4 +63,5 @@ dependencies {
     compile files('libs/badgeview.jar')
     compile files('libs/nineoldandroids-2.4.0.jar')
     compile files('libs/miaodou-sdk-1.1.4.jar')
+    compile files('libs/miaodou-sdk-1.1.5.1.jar')
 }
